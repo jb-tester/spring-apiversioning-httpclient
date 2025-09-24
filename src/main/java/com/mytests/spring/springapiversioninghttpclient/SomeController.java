@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/someController")
 public class SomeController {
 
-    @GetMapping(version = "1.0.0")
+    @GetMapping(version = "version1.0.0")
     public String test100() {
         return "test 1.0.0";
     }
@@ -24,7 +24,7 @@ public class SomeController {
         return "test 1.1.1";
     }
 
-    @GetMapping(version = "1.2+")
+    @GetMapping(version = "plus_version1.2+")
     public String test12plus() {
         return "test 1.2+";
     }
