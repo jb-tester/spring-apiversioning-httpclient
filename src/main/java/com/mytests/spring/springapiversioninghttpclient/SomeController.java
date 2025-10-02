@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @RestController
-@RequestMapping("/someController")
+@RequestMapping("/api/someController")
 public class SomeController {
 
     @GetMapping(version = "version1.0.0")

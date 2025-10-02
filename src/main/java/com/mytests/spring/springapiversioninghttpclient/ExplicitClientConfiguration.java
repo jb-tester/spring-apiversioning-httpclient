@@ -12,7 +12,7 @@ public class ExplicitClientConfiguration {
     //@Bean
     public SomeClient someClient() {
         RestClient restClient = RestClient.builder()
-                .baseUrl("http://localhost:8080")
+                .baseUrl("http://localhost:8080/api")
                 .apiVersionInserter(ApiVersionInserter.useQueryParam("version_query_param"))
                 //.apiVersionInserter(ApiVersionInserter.useHeader("API-Version"))
                 .build();
